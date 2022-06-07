@@ -58,6 +58,7 @@ echo "[2.1] Удаление архива на стороне контейнер
 docker exec -t -i $ID /bin/bash -c "rm -f /$(date +%m.%d.%Y).sql.gz  && rm -f /mysql_backup.sh"
 if [ $? -eq 0 ]; then
     echo "[1.1.+] Удаление завершено успешно!"
+    echo "[ВСЕ ОПЕРАЦИИ УСПЕШНО ЗАВЕРШЕНЫ]"
     exit 
 else 
     echo "[1.1-] Во время удаления возникли проблемы! Вы root?"
