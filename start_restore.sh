@@ -58,6 +58,7 @@ echo "[1.1] Удаление дампа.."
 docker exec -t -i $ID /bin/bash -c "rm -f /$DATE.sql && rm -f /mysql_restore.sh"
 if [ $? -eq 0 ]; then
     echo "[1.1.+] Удаление завершено успешно!"
+    echo "[ВСЕ ОПЕРАЦИИ УСПЕШНО ЗАВЕРШЕНЫ]"
     exit 
 else 
     echo "[1.1-] Во время удаления возникли проблемы! Вы root?"
