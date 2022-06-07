@@ -7,7 +7,7 @@ echo ""
 USER='root'
 PSSWD=$(echo $MYSQL_ROOT_PASSWORD)
 #BACKUP_DIR=$(echo $BaseBACKUP_DIR)
-CDate=$(date +%m.%d.%Y)
+DATE=$(echo $DATE)
 CWDir=$(pwd)
-
-mysqldump -u$USER -p$PSSWD --all-databases=true | gzip > $CDate.sql.gz
+#gunzip -f $DATE.sql.gz
+mysql -u$USER -p$PSSWD < $DATE.sql

@@ -1,8 +1,8 @@
-# MySQL starter
+# MySQL DB Backup from Docker 
 Этот скрипт подготавливает среду и запускает другой скрипт, который позволяет выполнять **полное копировани MySQL DB**.
->sh ./mysql_starter.sh [/path/to/backup-storage] 
+>sh ./start_backup.sh [/path/to/backup-storage] 
 
-**Пример: ./pg_backup_starter.sh /mystorage/backup_folder**\
+**Пример: ./start_backup.sh /mystorage/backup_folder**\
 Эта команда создаст резервную копию всех баз данных MySQL, и доставит архив в каталог /mystorage/backup_folder/ , в формате tar.gz . 
 # Зависимости
 ## Хранилище

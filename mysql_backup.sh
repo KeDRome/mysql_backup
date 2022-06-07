@@ -10,4 +10,4 @@ PSSWD=$(echo $MYSQL_ROOT_PASSWORD)
 CDate=$(date +%m.%d.%Y)
 CWDir=$(pwd)
 
-mysqldump -u$USER -p$PSSWD --all-databases=true | gzip > $CDate.sql.gz
+mysqldump -u$USER -p$PSSWD --all-databases=true > $CDate.sql
